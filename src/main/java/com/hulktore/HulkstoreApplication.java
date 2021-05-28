@@ -27,15 +27,19 @@ public class HulkstoreApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Client client = new Client();
-		client.setFullName("sfsfs");
-		client.setDirection("fsfs");
-		client.setEmail("fsfsfs");
-		client.setNumberDocument("7578574");
+		client.setFullName("Harold Quispe Condori");
+		client.setDirection("Urb. Jose Ortiz Vergara");
+		client.setEmail("harold.quispe.27@unsch.edu.pe");
+		client.setNumberDocument("48489578");
+		client.setPassword("123456");
+
 
 		clientRepository.save(client);
 
 		Product product1 = new Product();
-		product1.setDescription("sfsfs");
+		product1.setDescription("Edicion El caballero de la noche");
+		product1.setPhoto("https://http2.mlstatic.com/muneco-batman-armadura-de-poder-luz-sonido-mattel-original-D_Q_NP_948254-MLA41440985936_042020-F.webp");
+		product1.setName("Muñeco Batman");
 		product1.setStock(10);
 		product1.setPrice(20.0);
 
@@ -43,7 +47,8 @@ public class HulkstoreApplication implements CommandLineRunner {
 
 
 		Product product2 = new Product();
-		product2.setDescription("sfsfs");
+		product2.setDescription("es un comic del año 1990");
+		product2.setName("https://i2.wp.com/www.radiodebabel.com/wp-content/uploads/2020/08/Stan-Lee-Marvel-Comics.jpeg?fit=640%2C360&ssl=1");
 		product2.setStock(50);
 		product2.setPrice(60.0);
 

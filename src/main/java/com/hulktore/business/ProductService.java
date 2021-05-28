@@ -11,5 +11,5 @@ public interface ProductService {
     public Product save(Product product);
     public Product update(Product product);
     public void delete(Integer idProduct);
-    public void updateStock(Integer idProduct, Integer quantity);
+    //public void updateStock(Integer idProduct, Integer quantity);
 }

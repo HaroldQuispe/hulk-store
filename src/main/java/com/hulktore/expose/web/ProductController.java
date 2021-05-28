@@ -42,8 +42,8 @@ public class ProductController {
         productService.delete(idProduct);
     }
 
-    @PutMapping("products/{id}")
+    /*@PutMapping("products/{id}")
     public void updateStock(@PathVariable("id") Integer idProduct, Integer quantity){
         productService.updateStock(idProduct,quantity);
-    }
+    }*/
 }

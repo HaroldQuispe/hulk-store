@@ -47,11 +47,11 @@ public class ProductServiceImpl implements ProductService {
         productRepo.deleteById(idProduct);
     }
 
-    @Override
+    /*@Override
     public void updateStock(Integer idProduct, Integer quantity) {
         Product product = this.findById(idProduct);
         product.setStock(product.getStock()-quantity);
         this.update(product);
-    }
+    }*/
 
 }
